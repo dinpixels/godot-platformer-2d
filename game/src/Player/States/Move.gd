@@ -67,17 +67,17 @@ func exit() -> void:
 
 
 static func calculate_velocity(
-		old_velocity: Vector2,
-		max_speed: Vector2,
-		acceleration: Vector2,
+		previous_velocity: Vector2,
+		maximum_speed: Vector2,
+		pacing: Vector2,
 		delta: float,
 		move_direction: Vector2
 	) -> Vector2:
-	var new_velocity := old_velocity
+	var new_velocity := previous_velocity
 
-	new_velocity += move_direction * acceleration * delta
-	new_velocity.x = clamp(new_velocity.x, -max_speed.x, max_speed.x)
-	new_velocity.y = clamp(new_velocity.y, -max_speed.y, max_speed.y)
+	new_velocity += move_direction * pacing * delta
+	new_velocity.x = clamp(new_velocity.x, -maximum_speed.x, maximum_speed.x)
+	new_velocity.y = clamp(new_velocity.y, -maximum_speed.y, maximum_speed.y)
 
 	return new_velocity
 

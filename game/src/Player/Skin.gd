@@ -33,4 +33,3 @@ func play(name: String, data: Dictionary = {}) -> void:
 		assert('from' in data)
 		position = data.from
 	anim.play(name)
-

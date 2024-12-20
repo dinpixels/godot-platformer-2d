@@ -1,4 +1,4 @@
-# warning-ignore:unused_signal
+# warning-ignore-all:unused_signal
 extends Node
 
 signal player_moved(player)

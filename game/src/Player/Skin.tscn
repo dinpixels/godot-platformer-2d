@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://src/Player/Skin.gd" type="Script" id=1]
 [ext_resource path="res://assets/characters/robi/shadow.png" type="Texture" id=2]
 [ext_resource path="res://src/Player/Skin/Shadow.gd" type="Script" id=3]
 [ext_resource path="res://assets/characters/robi/robi_shaded.png" type="Texture" id=4]
 [ext_resource path="res://src/Player/FloorDetector.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Player/Skin/Robi.gd" type="Script" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "REST_POSE"
@@ -161,6 +162,7 @@ position = Vector2( 7.62939e-06, -63.6747 )
 scale = Vector2( 0.171399, 0.171399 )
 z_index = 10
 texture = ExtResource( 4 )
+script = ExtResource( 6 )
 
 [node name="FloorDetector" parent="." instance=ExtResource( 5 )]
 position = Vector2( 0, -0.370369 )

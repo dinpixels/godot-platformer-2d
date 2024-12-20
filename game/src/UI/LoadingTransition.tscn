@@ -241,6 +241,8 @@ tracks/2/keys = {
 
 [node name="LoadingTransition" type="ColorRect"]
 pause_mode = 2
+visible = false
+modulate = Color( 1, 1, 1, 0 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -264,10 +266,10 @@ position = Vector2( 1809.7, 975.4 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 hframes = 8
-frame = 6
 
 [node name="Robi" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 850, 832 )
+position = Vector2( 350, 862 )
 texture = ExtResource( 2 )
+
 [connection signal="animation_changed" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_changed"]
